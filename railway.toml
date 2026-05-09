@@ -1,5 +1,8 @@
 [build]
-builder = "nixpacks"
+builder = "railpack"
+
+[build.args]
+NODE_VERSION = "20"
 
 [deploy]
 startCommand = "npm start"
