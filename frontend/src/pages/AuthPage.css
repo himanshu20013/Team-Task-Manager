@@ -1,0 +1,105 @@
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+.auth-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.3;
+}
+.glow-1 {
+  width: 500px; height: 500px;
+  background: var(--accent);
+  top: -200px; right: -200px;
+}
+.glow-2 {
+  width: 400px; height: 400px;
+  background: var(--pink);
+  bottom: -150px; left: -150px;
+  opacity: 0.15;
+}
+
+.auth-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(124,109,250,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(124,109,250,0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.auth-card {
+  background: rgba(30, 30, 63, 0.8);
+  border: 1px solid var(--border2);
+  border-radius: 20px;
+  padding: 40px;
+  width: 100%;
+  max-width: 420px;
+  backdrop-filter: blur(20px);
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+.auth-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.auth-logo .logo-mark {
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 800;
+  color: white;
+  box-shadow: 0 0 30px var(--accent-glow);
+}
+
+.auth-logo h1 {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--text), var(--accent2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.auth-header { margin-bottom: 28px; }
+.auth-header h2 {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.auth-header p { color: var(--text2); font-size: 14px; }
+
+.auth-form { display: flex; flex-direction: column; gap: 18px; }
+
+.input-error { border-color: var(--red) !important; }
+.input-error:focus { box-shadow: 0 0 0 3px rgba(248,113,113,0.2) !important; }
+
+.auth-footer {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--text2);
+}
+.auth-footer a { color: var(--accent2); text-decoration: none; font-weight: 500; }
+.auth-footer a:hover { color: var(--text); }
