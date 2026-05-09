@@ -4,7 +4,7 @@ A full-stack team task management application with role-based access control, pr
 
 ## 🚀 Live Demo
 
-**Deployed URL: team-task-manager-production-97bc.up.railway.app
+**Deployed URL: (team-task-manager-production-97bc.up.railway.app)
 
 ## ✨ Features
 
